@@ -50,14 +50,5 @@ Contiene las vistas que presentan opciones al usuario y manejan la interfaz de c
 Incluye utilidades como la conexión a la base de datos (db_conn).
 main.py: Archivo principal para ejecutar la aplicación.
 
-## Autores
-[Saig, Leandro Matias](https://github.com/Matias-Saig)
 
-[Goitea Toro, Francisco](https://github.com/frantoro10)
-
-[López, Agustina](https://github.com/Agus-lopez2022)
-
-[Terragni, Santiago Leonel](https://github.com/santiterragni)
-
-[Sanchez, Carolina Soledad](https://github.com/carolita-s)
 
