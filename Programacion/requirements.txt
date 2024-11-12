@@ -1,0 +1,4 @@
+mysql-connector-python==9.0.0 
+bullet==2.2.0
+colorama==0.4.6
+readchar==4.2.1

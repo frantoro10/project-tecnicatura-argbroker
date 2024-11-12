@@ -1,0 +1,53 @@
+# locales
+ref
+
+# Archivos de configuración y credenciales
+config.ini
+
+# Entornos virtuales de Python
+venv/
+env/
+.venv/
+.pyvenv/
+
+# Archivos y carpetas generadas por el sistema operativo
+*.DS_Store
+Thumbs.db
+
+# Compilación de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Configuración de IDEs y editores
+.vscode/
+.idea/
+*.swp
+
+# Archivos de logs y bases de datos locales
+*.log
+*.sqlite3
+
+# Archivos de instalación de paquetes
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Carpetas que se generan con la documentación
+docs/_build/
+
+# Archivos relacionados con MySQL y otros datos
+*.sql
+
+# Carpetas o archivos de Docker (si llegas a usarlo)
+docker-compose.override.yml
+
+# Archivos de entorno para configuración local
+.env
+*.env
+
+# Archivos relacionados con Jupyter Notebooks (si usas Jupyter en algún momento)
+.ipynb_checkpoints/
+
+# Evitar archivos innecesarios generados por VSCode
+.vscode/
