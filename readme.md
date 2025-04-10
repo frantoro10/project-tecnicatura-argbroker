@@ -1,7 +1,7 @@
 
 # ARGBroker - README
 
-#English:
+# English:
 ## Purpose
 
 The ARGBroker application for stock investment allows users to invest and perform buy/sell stock transactions efficiently. It is designed to simulate a basic investment system, providing a simple and accessible user experience for those who wish to manage and visualize their assets and stock transactions.
