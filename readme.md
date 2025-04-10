@@ -1,6 +1,70 @@
 
 # ARGBroker - README
 
+#English:
+## Purpose
+
+The ARGBroker application for stock investment allows users to invest and perform buy/sell stock transactions efficiently. It is designed to simulate a basic investment system, providing a simple and accessible user experience for those who wish to manage and visualize their assets and stock transactions.
+
+## Context
+
+This project is a learning exercise in console application development, designed to consolidate knowledge in Python, relational database management (MySQL), design patterns such as DAO (Data Access Object), and PEP 8 naming conventions. The application was developed in an educational environment to demonstrate how to integrate a simple and solid backend with a functional console interface, allowing the registration and management of user and investment data.
+
+## Scope
+
+The application covers the following key functionalities:
+
+#### User Management:
+Users can register, log in, and recover passwords. User profile information is stored and managed.
+
+#### Stock Purchase and Sale Transactions:
+Investors can choose from a list of available stocks to buy and manage the stocks they own to sell, with a commission percentage applied to each transaction.
+
+#### Portfolio Visualization: 
+Users can view the stocks in their portfolio with detailed information such as the number of shares and their current value.
+
+#### Database Connection: 
+The application uses a MySQL database to securely store all user and transaction information, with CRUD operations implemented using the DAO pattern.
+
+This project is limited to console data handling and does not include a graphical user interface. Transactions are simulated without any connection to real stock markets.
+
+## Installation and Usage 
+
+#### Requirements:
+
+- Python 3.x  
+- MySQLConnector (check `requirements.txt`)
+
+#### Setup:
+
+- Clone the repository.  
+- Create a database in MySQL, run the table creation script (`arg_broker.sql`), and execute the `data_mock` script to insert sample data.  
+- Configure the connection credentials in the `config.ini` file to enable the connection via `db_conn` located in the `utils` folder.
+
+#### Execution:
+
+From the terminal, run:
+python main.py
+
+## Project Structure
+#### models:
+Contains the data model classes.
+
+#### dao:
+Implements the DAO design pattern to handle data connection and manipulation.
+
+#### views:
+Contains the views that present user options and manage the console interface.
+
+#### utils:
+Includes utilities such as the database connection (db_conn).
+
+#### main.py: Main file to run the application.
+
+
+
+# Spanish:
+
 ## Proposito
 
 La aplicación ARGBroker para la inversión de Acciones, permite a los usuarios invertir y realizar transacciones de compra y venta de acciones de manera eficiente. Está diseñada para simular un sistema de inversión básico, proporcionando una experiencia de usuario sencilla y accesible para quienes deseen administrar y visualizar sus activos y transacciones de acciones.
