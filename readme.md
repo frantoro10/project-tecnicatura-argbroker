@@ -1,118 +1,169 @@
+# 📈 ARGBroker
 
-# ARGBroker - README
+## 🇬🇧 English Version
 
-# English:
-## Purpose
+### 🎯 Purpose
 
-The ARGBroker application for stock investment allows users to invest and perform buy/sell stock transactions efficiently. It is designed to simulate a basic investment system, providing a simple and accessible user experience for those who wish to manage and visualize their assets and stock transactions.
+**ARGBroker** is a console-based stock investment application that allows users to simulate **buying and selling stocks**, visualize their **portfolio**, and manage user accounts in a simple, educational environment.
 
-## Context
+---
 
-This project is a learning exercise in console application development, designed to consolidate knowledge in Python, relational database management (MySQL), design patterns such as DAO (Data Access Object), and PEP 8 naming conventions. The application was developed in an educational environment to demonstrate how to integrate a simple and solid backend with a functional console interface, allowing the registration and management of user and investment data.
+### 🧠 Context
 
-## Scope
+This project was created as a **learning exercise** to:
 
-The application covers the following key functionalities:
+- Consolidate knowledge in **Python**  
+- Work with **MySQL relational databases**  
+- Apply the **DAO (Data Access Object)** design pattern  
+- Follow **PEP8** code style conventions
 
-#### User Management:
-Users can register, log in, and recover passwords. User profile information is stored and managed.
+It integrates a solid backend with a **functional console interface**, simulating real-world investment behavior.
 
-#### Stock Purchase and Sale Transactions:
-Investors can choose from a list of available stocks to buy and manage the stocks they own to sell, with a commission percentage applied to each transaction.
+---
 
-#### Portfolio Visualization: 
-Users can view the stocks in their portfolio with detailed information such as the number of shares and their current value.
+### 🧩 Scope
 
-#### Database Connection: 
-The application uses a MySQL database to securely store all user and transaction information, with CRUD operations implemented using the DAO pattern.
+The application includes the following core features:
 
-This project is limited to console data handling and does not include a graphical user interface. Transactions are simulated without any connection to real stock markets.
+#### 👤 User Management
+- User registration and login  
+- Password recovery  
+- Profile data storage and handling  
 
-## Installation and Usage 
+#### 💸 Stock Transactions
+- Purchase stocks from an available list  
+- Sell owned stocks  
+- Each transaction includes a **commission fee**
 
-#### Requirements:
+#### 📊 Portfolio Visualization
+- View portfolio details  
+- Includes current value, number of shares, and total investment
 
-- Python 3.x  
-- MySQLConnector (check `requirements.txt`)
+#### 🛢️ MySQL Database Integration
+- All data is persisted using **MySQL**
+- CRUD operations managed via **DAO pattern**
 
-#### Setup:
+> ⚠️ This project simulates transactions and does **not connect to real stock markets**.  
+> It is designed for console-based interactions only.
 
-- Clone the repository.  
-- Create a database in MySQL, run the table creation script (`arg_broker.sql`), and execute the `data_mock` script to insert sample data.  
-- Configure the connection credentials in the `config.ini` file to enable the connection via `db_conn` located in the `utils` folder.
+---
 
-#### Execution:
+### 🧪 Installation & Usage
 
-From the terminal, run:
+#### 📋 Requirements
+
+- Python `3.x`  
+- `mysql-connector-python` (Check `requirements.txt`)
+
+#### ⚙️ Setup
+
+1. Clone the repository  
+2. Create a database in MySQL  
+3. Run `arg_broker.sql` to create tables  
+4. Run `data_mock.sql` to insert sample data  
+5. Set your database credentials in `config.ini` (inside `/utils`)
+
+#### ▶️ Run
+
+```bash
 python main.py
+```
 
-## Project Structure
-#### models:
-Contains the data model classes.
+---
 
-#### dao:
-Implements the DAO design pattern to handle data connection and manipulation.
+### 🗂️ Project Structure
 
-#### views:
-Contains the views that present user options and manage the console interface.
+```text
+/dao       → DAO pattern for database access  
+/models    → Data model classes  
+/views     → Console interface logic  
+/utils     → Utility functions and DB connection  
+main.py    → Entry point of the application  
+```
 
-#### utils:
-Includes utilities such as the database connection (db_conn).
+---
 
-#### main.py: Main file to run the application.
+## 🇪🇸 Versión en Español
 
+### 🎯 Propósito
 
+**ARGBroker** es una aplicación de consola para inversión en acciones que permite simular **compras y ventas**, visualizar el **portafolio**, y gestionar cuentas de usuario de forma sencilla y educativa.
 
-# Spanish:
+---
 
-## Proposito
+### 🧠 Contexto
 
-La aplicación ARGBroker para la inversión de Acciones, permite a los usuarios invertir y realizar transacciones de compra y venta de acciones de manera eficiente. Está diseñada para simular un sistema de inversión básico, proporcionando una experiencia de usuario sencilla y accesible para quienes deseen administrar y visualizar sus activos y transacciones de acciones.
+Este proyecto fue desarrollado como un ejercicio para:
 
-## Contexto
-Este proyecto es un ejercicio de aprendizaje en el desarrollo de aplicaciones de consola, diseñado para consolidar los conocimientos en Python, manejo de bases de datos relacionales (MySQL), patrones de diseño como el DAO (Data Access Object) y las convenciones de nomenclatura PEP 8. La aplicación fue desarrollada en un entorno educativo para demostrar cómo integrar un backend simple y sólido con una interfaz de consola funcional, permitiendo el registro y la gestión de datos de usuarios e inversiones.
+- Consolidar conocimientos en **Python**  
+- Utilizar bases de datos relacionales con **MySQL**  
+- Aplicar el patrón de diseño **DAO (Data Access Object)**  
+- Seguir las convenciones de código **PEP8**
 
-## Alcance
-La aplicación cubre las siguientes funcionalidades clave:
+Integra un backend sólido con una **interfaz funcional por consola**.
 
- #### Gestión de Usuarios:
-  Los usuarios pueden registrarse, iniciar sesión, y recuperar contraseñas. Se almacena y maneja información de perfil de usuario.
+---
 
- ####  Transacciones de Compra y Venta de Acciones:
-  Permite a los inversores seleccionar entre un listado de acciones disponibles para comprar y gestionar las acciones que poseen para vender, con un porcentaje de comisión aplicado a cada transacción.
+### 🧩 Alcance
 
- #### Visualización de Portafolio: 
- Los usuarios pueden ver las acciones en su portafolio con información detallada como la cantidad de acciones y su valor actual.
+La aplicación incluye las siguientes funcionalidades clave:
 
- #### Conexión con Base de Datos: 
- La aplicación utiliza una base de datos MySQL para almacenar de manera segura toda la información de usuarios y transacciones, con operaciones CRUD implementadas en el patrón DAO.
+#### 👤 Gestión de Usuarios
+- Registro e inicio de sesión  
+- Recuperación de contraseña  
+- Almacenamiento de datos de perfil  
 
-Este proyecto está limitado al manejo de datos en consola y no incluye una interfaz gráfica. Las transacciones se simulan sin conexión a mercados de valores reales.
+#### 💸 Transacciones de Acciones
+- Comprar acciones disponibles  
+- Vender acciones propias  
+- Aplicación de un **porcentaje de comisión**
 
-## Instalación y Uso 
-#### Requisitos:
+#### 📊 Visualización del Portafolio
+- Visualización del portafolio con:
+  - Cantidad de acciones  
+  - Valor actual  
+  - Inversión total
 
-Python 3.x
-MySQLConnector(consultar requirements.txt)
-#### Configuración:
+#### 🛢️ Conexión a Base de Datos
+- Datos almacenados con **MySQL**
+- Operaciones CRUD mediante el **patrón DAO**
 
-Clonar el repositorio.
-Crear una base de datos en MySQL, ejecutar el script de creación de tablas (archivo arg_broker.sql) y ejecutar script (data_mock) para insertar los datos.
-Configurar las credenciales de conexión en el archivo config.ini para realizar la conexión con db_conn de la carpeta utils.
-#### Ejecución:
+> ⚠️ Este proyecto simula transacciones y **no se conecta a mercados reales**.  
+> Funciona únicamente por consola.
 
-Desde la terminal, ejecutar python main.py para iniciar la aplicación.
+---
 
-## Estructura del proyecto
-#### models: 
-Contiene las clases del modelo de datos.
-#### dao: 
-Implementa el patrón de diseño DAO para manejar la conexión y manipulación de datos.
-#### views: 
-Contiene las vistas que presentan opciones al usuario y manejan la interfaz de consola.
-#### utils: 
-Incluye utilidades como la conexión a la base de datos (db_conn).
-main.py: Archivo principal para ejecutar la aplicación.
+### 🧪 Instalación y Uso
 
+#### 📋 Requisitos
+
+- Python `3.x`  
+- `mysql-connector-python` (ver `requirements.txt`)
+
+#### ⚙️ Configuración
+
+1. Clonar el repositorio  
+2. Crear una base de datos en MySQL  
+3. Ejecutar `arg_broker.sql` para crear las tablas  
+4. Ejecutar `data_mock.sql` para insertar datos de ejemplo  
+5. Configurar las credenciales en `config.ini` (dentro de `/utils`)
+
+#### ▶️ Ejecución
+
+```bash
+python main.py
+```
+
+---
+
+### 🗂️ Estructura del Proyecto
+
+```text
+/dao       → Lógica de acceso a datos con patrón DAO  
+/models    → Clases del modelo de datos  
+/views     → Lógica de la interfaz de consola  
+/utils     → Funciones utilitarias y conexión a la DB  
+main.py    → Archivo principal para ejecutar la app  
+```
 
 
